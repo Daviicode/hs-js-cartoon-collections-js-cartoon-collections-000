@@ -2,7 +2,7 @@ var dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"];
 var i = 0;
 function dwarfRollCall(dwarves) {
   var countingDwarves = [];
-  for (i = 0; i < (dwarves.length/2); i++) {
+  for (i = (dwarves.length/2); i < dwarves.length; i++) {
     countingDwarves.push([i+1] +". " + dwarves[i] + " ");
   }
   return countingDwarves.join("");
